@@ -1856,3 +1856,1211 @@ Processing by ShortUrlsController#show as HTML
 Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 2.0ms | Allocations: 887)
 
 
+Started GET "/" for 172.18.0.1 at 2022-04-27 14:16:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (41.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (84.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ShortUrlsController#index as HTML
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms | Allocations: 1167)
+
+
+  
+SyntaxError (/app/app/models/short_url.rb:5: syntax error, unexpected ':', expecting end
+  validate : validate_full_url 
+           ^):
+  
+app/models/short_url.rb:5: syntax error, unexpected ':', expecting end
+app/models/short_url.rb:5: syntax error, unexpected ':', expecting end
+app/models/short_url.rb:5: syntax error, unexpected ':', expecting end
+app/controllers/short_urls_controller.rb:8:in `index'
+Started GET "/" for 172.18.0.1 at 2022-04-27 14:19:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (14.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 284ms (Views: 15.1ms | ActiveRecord: 19.5ms | Allocations: 9271)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:19:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to https://google.com
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.6ms | Allocations: 1657)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:19:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (2.3ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to https://google.com
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.3ms | Allocations: 1200)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:20:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to https://google.com
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 1185)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:20:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to https://google.com
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.7ms | Allocations: 1186)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:22:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to https://google.com
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms | Allocations: 1185)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/" for 172.18.0.1 at 2022-04-27 14:22:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.5ms | Allocations: 1855)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:22:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to https://google.com
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.7ms | Allocations: 1201)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/show" for 172.18.0.1 at 2022-04-27 14:23:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'show' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.6ms | Allocations: 1459)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/show" for 172.18.0.1 at 2022-04-27 14:23:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mShortUrl Load (1.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'show' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.7ms | Allocations: 1452)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:23:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to https://google.com
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.7ms | Allocations: 1185)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/plapla" for 172.18.0.1 at 2022-04-27 14:23:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"plapla"}
+  [1m[36mShortUrl Load (1.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'plapla' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.8ms | Allocations: 1453)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/plapla" for 172.18.0.1 at 2022-04-27 14:24:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"plapla"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'plapla' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms | Allocations: 1451)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/pop" for 172.18.0.1 at 2022-04-27 14:24:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"pop"}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'pop' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 1452)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/" for 172.18.0.1 at 2022-04-27 14:24:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms | Allocations: 1855)
+
+
+Started GET "/123" for 172.18.0.1 at 2022-04-27 14:24:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = '123' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 1453)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/123" for 172.18.0.1 at 2022-04-27 14:25:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mShortUrl Load (0.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = '123' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.8ms | Allocations: 1451)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/123" for 172.18.0.1 at 2022-04-27 14:25:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = '123' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.7ms | Allocations: 1451)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/" for 172.18.0.1 at 2022-04-27 14:25:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (1.2ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 1.2ms | Allocations: 1855)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:25:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to https://google.com
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms | Allocations: 1186)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/pla" for 172.18.0.1 at 2022-04-27 14:25:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"pla"}
+  [1m[36mShortUrl Load (1.0ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'pla' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.0ms | Allocations: 1451)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/777" for 172.18.0.1 at 2022-04-27 14:25:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"777"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = '777' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms | Allocations: 1451)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/1" for 172.18.0.1 at 2022-04-27 14:25:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = '1' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.6ms | Allocations: 1451)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/1" for 172.18.0.1 at 2022-04-27 14:29:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = '1' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.7ms | Allocations: 1451)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/1" for 172.18.0.1 at 2022-04-27 14:30:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = '1' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms | Allocations: 1451)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/" for 172.18.0.1 at 2022-04-27 14:31:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.6ms | Allocations: 1855)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:32:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to https://google.com
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.7ms | Allocations: 1186)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/iajdoiasdoiamdoasmdasd" for 172.18.0.1 at 2022-04-27 14:32:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"iajdoiasdoiamdoasmdasd"}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'iajdoiasdoiamdoasmdasd' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 1451)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/" for 172.18.0.1 at 2022-04-27 14:34:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.7ms | Allocations: 1855)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:34:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (1.1ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to https://google.com
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms | Allocations: 1186)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/cba" for 172.18.0.1 at 2022-04-27 14:34:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"cba"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'cba' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 1451)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/" for 172.18.0.1 at 2022-04-27 14:35:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.8ms | Allocations: 1857)
+
+
+Started GET "/try" for 172.18.0.1 at 2022-04-27 14:35:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"try"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'try' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to http://localhost:3000asd
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.7ms | Allocations: 1210)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/try" for 172.18.0.1 at 2022-04-27 14:36:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"try"}
+  [1m[36mShortUrl Load (0.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'try' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to http://localhost:3000asd
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.8ms | Allocations: 1198)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/try" for 172.18.0.1 at 2022-04-27 14:37:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"try"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'try' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to http://localhost:3000asd
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 1198)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/try" for 172.18.0.1 at 2022-04-27 14:37:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"try"}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'try' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to http://localhost:3000asd
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 1198)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/try" for 172.18.0.1 at 2022-04-27 14:37:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"try"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'try' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to http://localhost:3000asd
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 1198)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/try" for 172.18.0.1 at 2022-04-27 14:38:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"try"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'try' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Redirected to http://localhost:3000asd
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 1198)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/" for 172.18.0.1 at 2022-04-27 14:38:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 1855)
+
+
+Started GET "/98239123" for 172.18.0.1 at 2022-04-27 14:38:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"98239123"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = '98239123' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.7ms | Allocations: 1452)
+
+
+  
+NoMethodError (undefined method `full_url' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:26:in `show'
+Started GET "/98239123" for 172.18.0.1 at 2022-04-27 14:40:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"98239123"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = '98239123' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 200 OK in 55ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 2402)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:41:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (4.0ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 200 OK in 22ms (Views: 1.1ms | ActiveRecord: 5.2ms | Allocations: 4784)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:41:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.9ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 0.9ms | Allocations: 907)
+
+
+Started GET "/try" for 172.18.0.1 at 2022-04-27 14:41:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"try"}
+  [1m[36mShortUrl Load (0.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'try' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 200 OK in 10ms (Views: 1.7ms | ActiveRecord: 0.8ms | Allocations: 896)
+
+
+Started GET "/123" for 172.18.0.1 at 2022-04-27 14:42:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = '123' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 783)
+
+
+Started GET "/123" for 172.18.0.1 at 2022-04-27 14:42:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = '123' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 783)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 14:42:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (1.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 200 OK in 19ms (Views: 3.1ms | ActiveRecord: 1.6ms | Allocations: 893)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 14:43:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (2.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` IN (NULL, NULL)[0m
+  ↳ app/controllers/short_urls_controller.rb:8:in `index'
+Completed 404 Not Found in 29ms (ActiveRecord: 2.8ms | Allocations: 2886)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find all ShortUrls with 'id': (all, {:order=>"click_count desc", :limit=>100}) (found 0 results, but was looking for 2).):
+  
+app/controllers/short_urls_controller.rb:8:in `index'
+Started GET "/" for 172.18.0.1 at 2022-04-27 14:47:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` IN (NULL, NULL)[0m
+  ↳ app/controllers/short_urls_controller.rb:8:in `index'
+Completed 404 Not Found in 6ms (ActiveRecord: 0.8ms | Allocations: 2898)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find all ShortUrls with 'id': (all, {:order=>"click_count desc", :limit=>100}) (found 0 results, but was looking for 2).):
+  
+app/controllers/short_urls_controller.rb:8:in `index'
+Started GET "/" for 172.18.0.1 at 2022-04-27 15:06:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (3.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` ORDER BY click_count desc LIMIT 1000[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 127ms (Views: 66.8ms | ActiveRecord: 13.2ms | Allocations: 6991)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 15:06:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 200 OK in 74ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 3476)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 15:07:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Redirected to https://google.com
+Completed 302 Found in 100ms (ActiveRecord: 4.6ms | Allocations: 5401)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 15:22:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.9ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` ORDER BY click_count desc LIMIT 1000[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 59ms (Views: 15.9ms | ActiveRecord: 0.9ms | Allocations: 6431)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 15:23:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (1.2ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+  [1m[36mShortUrl Update All (483.2ms)[0m  [1m[33mUPDATE `short_urls` SET `short_urls`.`click_count` = COALESCE(`short_urls`.`click_count`, 0) + 1 WHERE `short_urls`.`id` = 1[0m
+  ↳ app/controllers/short_urls_controller.rb:27:in `show'
+Redirected to https://google.com
+Completed 302 Found in 496ms (ActiveRecord: 484.4ms | Allocations: 1621)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 15:23:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (2.1ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` ORDER BY click_count desc LIMIT 1000[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 2.1ms | Allocations: 1892)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 15:29:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"asd", "title"=>"testing", "short_url"=>{"full_url"=>"asd", "title"=>"testing"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[36mShortUrl Create (472.5ms)[0m  [1m[32mINSERT INTO `short_urls` (`full_url`, `title`, `created_at`, `updated_at`) VALUES ('asd', 'testing', '2022-04-27 15:29:31.507770', '2022-04-27 15:29:31.507770')[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[35m (243.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+Completed 201 Created in 810ms (Views: 1.2ms | ActiveRecord: 716.5ms | Allocations: 3794)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 15:31:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"asd", "title"=>"testing", "short_url"=>{"full_url"=>"asd", "title"=>"testing"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[36mShortUrl Create (0.9ms)[0m  [1m[32mINSERT INTO `short_urls` (`full_url`, `title`, `created_at`, `updated_at`) VALUES ('asd', 'testing', '2022-04-27 15:31:21.384371', '2022-04-27 15:31:21.384371')[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[35m (58.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+Completed 201 Created in 92ms (Views: 1.2ms | ActiveRecord: 64.2ms | Allocations: 7151)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 15:34:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/models/short_url.rb:23: syntax error, unexpected end-of-input, expecting end):
+  
+app/models/short_url.rb:23: syntax error, unexpected end-of-input, expecting end
+app/models/short_url.rb:23: syntax error, unexpected end-of-input, expecting end
+app/models/short_url.rb:23: syntax error, unexpected end-of-input, expecting end
+Started POST "/" for 172.18.0.1 at 2022-04-27 15:35:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/models/short_url.rb:23: syntax error, unexpected end-of-input, expecting end):
+  
+app/models/short_url.rb:23: syntax error, unexpected end-of-input, expecting end
+app/models/short_url.rb:23: syntax error, unexpected end-of-input, expecting end
+app/models/short_url.rb:23: syntax error, unexpected end-of-input, expecting end
+Started POST "/" for 172.18.0.1 at 2022-04-27 15:35:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/models/short_url.rb:20: else without rescue is useless
+    else  
+    ^~~~
+/app/app/models/short_url.rb:25: syntax error, unexpected end, expecting end-of-input):
+  
+app/models/short_url.rb:20: else without rescue is useless
+app/models/short_url.rb:25: syntax error, unexpected end, expecting end-of-input
+app/models/short_url.rb:20: else without rescue is useless
+app/models/short_url.rb:25: syntax error, unexpected end, expecting end-of-input
+app/models/short_url.rb:20: else without rescue is useless
+app/models/short_url.rb:25: syntax error, unexpected end, expecting end-of-input
+Started POST "/" for 172.18.0.1 at 2022-04-27 15:39:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"asd", "title"=>"testing", "short_url"=>{"full_url"=>"asd", "title"=>"testing"}}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 4.7ms | Allocations: 4752)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): :full_url):
+  
+app/models/short_url.rb:16:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 15:40:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebook.com", "title"=>"fb", "short_url"=>{"full_url"=>"facebook.com", "title"=>"fb"}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1158)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): :full_url):
+  
+app/models/short_url.rb:16:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 15:49:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebook.com", "title"=>"fb", "short_url"=>{"full_url"=>"facebook.com", "title"=>"fb"}}
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms | Allocations: 6398)
+
+
+  
+NoMethodError (undefined method `parse_uri' for #<ShortUrl:0x00007f36c816bf88>):
+  
+app/models/short_url.rb:14:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 15:50:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebook.com", "title"=>"fb", "short_url"=>{"full_url"=>"facebook.com", "title"=>"fb"}}
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 3.8ms | Allocations: 8869)
+
+
+  
+NameError (uninitialized constant #<Class:0x00007f36c845f1e0>::Addressable):
+  
+app/models/short_url.rb:23:in `rescue in parse_uri'
+app/models/short_url.rb:20:in `parse_uri'
+app/models/short_url.rb:14:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:00:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebook.com", "title"=>"fb", "short_url"=>{"full_url"=>"facebook.com", "title"=>"fb"}}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 4327)
+
+
+  
+TypeError (no implicit conversion of Symbol into String):
+  
+app/models/short_url.rb:17:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:03:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebook.com", "title"=>"fb", "short_url"=>{"full_url"=>"facebook.com", "title"=>"fb"}}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 4.7ms | Allocations: 4364)
+
+
+  
+TypeError (no implicit conversion of Symbol into String):
+  
+app/models/short_url.rb:18:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:04:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebook.com", "title"=>"fb", "short_url"=>{"full_url"=>"facebook.com", "title"=>"fb"}}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.5ms | Allocations: 4366)
+
+
+  
+TypeError (no implicit conversion of Symbol into String):
+  
+app/models/short_url.rb:18:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:08:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebookcom", "title"=>"fb", "short_url"=>{"full_url"=>"facebookcom", "title"=>"fb"}}
+Completed 500 Internal Server Error in 497ms (ActiveRecord: 31.8ms | Allocations: 7820)
+
+
+  
+TypeError (no implicit conversion of Symbol into String):
+  
+app/models/short_url.rb:21:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:08:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebook.com", "title"=>"fb", "short_url"=>{"full_url"=>"facebook.com", "title"=>"fb"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+TypeError (no implicit conversion of Symbol into String):
+  
+app/models/short_url.rb:21:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:09:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebookcom", "title"=>"fb", "short_url"=>{"full_url"=>"facebookcom", "title"=>"fb"}}
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 3.8ms | Allocations: 7072)
+
+
+  
+NameError (undefined local variable or method `url' for #<ShortUrl:0x00007f36c850adb0>
+Did you mean?  URI):
+  
+app/models/short_url.rb:18:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:09:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebookcom", "title"=>"fb", "short_url"=>{"full_url"=>"facebookcom", "title"=>"fb"}}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 3.4ms | Allocations: 5248)
+
+
+  
+NoMethodError (undefined method `split' for :full_url:Symbol):
+  
+app/models/short_url.rb:18:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:10:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebookcom", "title"=>"fb", "short_url"=>{"full_url"=>"facebookcom", "title"=>"fb"}}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 3.0ms | Allocations: 6815)
+
+
+  
+NameError (uninitialized constant #<Class:0x00007f36c83bd1b0>::EXTENSIONS):
+  
+app/models/short_url.rb:19:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:12:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebookcom", "title"=>"fb", "short_url"=>{"full_url"=>"facebookcom", "title"=>"fb"}}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.9ms | Allocations: 6815)
+
+
+  
+NameError (uninitialized constant #<Class:0x00007f36cc38a090>::EXTENSIONS):
+  
+app/models/short_url.rb:20:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:12:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebookcom", "title"=>"fb", "short_url"=>{"full_url"=>"facebookcom", "title"=>"fb"}}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 4.2ms | Allocations: 5248)
+
+
+  
+NoMethodError (undefined method `split' for :full_url:Symbol):
+  
+app/models/short_url.rb:19:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:13:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebookcom", "title"=>"fb", "short_url"=>{"full_url"=>"facebookcom", "title"=>"fb"}}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.4ms | Allocations: 6832)
+
+
+  
+NameError (uninitialized constant #<Class:0x0000563f67b8b828>::EXTENSIONS):
+  
+app/models/short_url.rb:20:in `validate_full_url'
+app/controllers/short_urls_controller.rb:16:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:17:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebookcom", "title"=>"fb", "short_url"=>{"full_url"=>"facebookcom", "title"=>"fb"}}
+Completed 422 Unprocessable Entity in 32ms (Views: 0.8ms | ActiveRecord: 3.1ms | Allocations: 5421)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:17:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebook.com", "title"=>"fb", "short_url"=>{"full_url"=>"facebook.com", "title"=>"fb"}}
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1752)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:21:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"facebookcom", "title"=>"fb", "short_url"=>{"full_url"=>"facebookcom", "title"=>"fb"}}
+Completed 422 Unprocessable Entity in 13ms (Views: 0.2ms | ActiveRecord: 5.2ms | Allocations: 4753)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:21:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"http://facebookcom", "title"=>"fb", "short_url"=>{"full_url"=>"http://facebookcom", "title"=>"fb"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[36mShortUrl Create (11.3ms)[0m  [1m[32mINSERT INTO `short_urls` (`full_url`, `title`, `created_at`, `updated_at`) VALUES ('http://facebookcom', 'fb', '2022-04-27 16:21:26.748728', '2022-04-27 16:21:26.748728')[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[35m (26.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+Completed 201 Created in 64ms (Views: 1.7ms | ActiveRecord: 38.0ms | Allocations: 2808)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:21:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"htp://facebook.com", "title"=>"fb", "short_url"=>{"full_url"=>"htp://facebook.com", "title"=>"fb"}}
+Completed 422 Unprocessable Entity in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1088)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:22:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"htp://facebook.com", "title"=>"fb", "short_url"=>{"full_url"=>"htp://facebook.com", "title"=>"fb"}}
+Completed 422 Unprocessable Entity in 10ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 4721)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:23:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"http://twitchtv", "title"=>"tw", "short_url"=>{"full_url"=>"http://twitchtv", "title"=>"tw"}}
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 797)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:23:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"http://twitchtv", "title"=>"tw", "short_url"=>{"full_url"=>"http://twitchtv", "title"=>"tw"}}
+Completed 422 Unprocessable Entity in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 797)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:24:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"htp://twitch.tv", "title"=>"tw", "short_url"=>{"full_url"=>"htp://twitch.tv", "title"=>"tw"}}
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1088)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:24:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"htt://twitch.tv", "title"=>"tw", "short_url"=>{"full_url"=>"htt://twitch.tv", "title"=>"tw"}}
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1088)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 16:25:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"http://twitch.tv", "title"=>"tw", "short_url"=>{"full_url"=>"http://twitch.tv", "title"=>"tw"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[36mShortUrl Create (0.8ms)[0m  [1m[32mINSERT INTO `short_urls` (`full_url`, `title`, `created_at`, `updated_at`) VALUES ('http://twitch.tv', 'tw', '2022-04-27 16:25:00.208515', '2022-04-27 16:25:00.208515')[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[35m (48.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+Completed 201 Created in 63ms (Views: 1.1ms | ActiveRecord: 49.3ms | Allocations: 2786)
+
+
+Started GET "/tv" for 172.18.0.1 at 2022-04-27 16:26:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"tv"}
+  [1m[36mShortUrl Load (2.2ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'tv' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.2ms | Allocations: 1607)
+
+
+  
+NoMethodError (undefined method `increment!' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:27:in `show'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 16:26:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (1.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+  [1m[36mShortUrl Update All (32.6ms)[0m  [1m[33mUPDATE `short_urls` SET `short_urls`.`click_count` = COALESCE(`short_urls`.`click_count`, 0) + 1 WHERE `short_urls`.`id` = 1[0m
+  ↳ app/controllers/short_urls_controller.rb:27:in `show'
+Redirected to https://google.com
+Completed 302 Found in 43ms (ActiveRecord: 34.2ms | Allocations: 1421)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 16:26:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+  [1m[36mShortUrl Load (1.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` ORDER BY click_count desc LIMIT 1000[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 1.8ms | Allocations: 2401)
+
+
+Started GET "/tw" for 172.18.0.1 at 2022-04-27 16:26:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"tw"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'tw' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+  [1m[36mShortUrl Update All (40.9ms)[0m  [1m[33mUPDATE `short_urls` SET `short_urls`.`click_count` = COALESCE(`short_urls`.`click_count`, 0) + 1 WHERE `short_urls`.`id` = 11[0m
+  ↳ app/controllers/short_urls_controller.rb:27:in `show'
+Redirected to http://twitch.tv
+Completed 302 Found in 51ms (ActiveRecord: 41.7ms | Allocations: 1409)
+
+
+Started GET "/tv" for 172.18.0.1 at 2022-04-27 16:27:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"tv"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'tv' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.7ms | Allocations: 1452)
+
+
+  
+NoMethodError (undefined method `increment!' for nil:NilClass):
+  
+app/controllers/short_urls_controller.rb:27:in `show'
+Started GET "/tv" for 172.18.0.1 at 2022-04-27 16:29:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"tv"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'tv' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 406 Not Acceptable in 51ms (ActiveRecord: 2.3ms | Allocations: 3531)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/tv" for 172.18.0.1 at 2022-04-27 16:30:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"tv"}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'tv' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 500 Internal Server Error in 272ms (ActiveRecord: 1.9ms | Allocations: 96805)
+
+
+  
+NameError (undefined local variable or method `errors' for #<ShortUrlsController:0x0000563f67b58a90>):
+  
+app/controllers/short_urls_controller.rb:33:in `show'
+Started GET "/tv" for 172.18.0.1 at 2022-04-27 16:31:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"tv"}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'tv' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+Completed 200 OK in 35ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 1882)
+
+
+Started GET "/tw" for 172.18.0.1 at 2022-04-27 16:31:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"tw"}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'tw' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+  [1m[36mShortUrl Update All (21.8ms)[0m  [1m[33mUPDATE `short_urls` SET `short_urls`.`click_count` = COALESCE(`short_urls`.`click_count`, 0) + 1 WHERE `short_urls`.`id` = 11[0m
+  ↳ app/controllers/short_urls_controller.rb:29:in `show'
+Redirected to http://twitch.tv
+Completed 302 Found in 68ms (ActiveRecord: 25.7ms | Allocations: 6141)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 16:31:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` ORDER BY click_count desc LIMIT 1000[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.8ms | Allocations: 2405)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 16:33:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` ORDER BY click_count desc LIMIT 1000[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 41ms (Views: 12.6ms | ActiveRecord: 5.0ms | Allocations: 6961)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 16:33:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (1.0ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`title` = 'abc' LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:26:in `show'
+  [1m[36mShortUrl Update All (31.0ms)[0m  [1m[33mUPDATE `short_urls` SET `short_urls`.`click_count` = COALESCE(`short_urls`.`click_count`, 0) + 1 WHERE `short_urls`.`id` = 1[0m
+  ↳ app/controllers/short_urls_controller.rb:29:in `show'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:31:in `show'
+  [1m[36mShortUrl Update (2.5ms)[0m  [1m[33mUPDATE `short_urls` SET `short_urls`.`updated_at` = '2022-04-27 16:33:53.419241' WHERE `short_urls`.`id` = 1[0m
+  ↳ app/controllers/short_urls_controller.rb:31:in `show'
+  [1m[35m (32.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:31:in `show'
+Redirected to https://google.com
+Completed 302 Found in 85ms (ActiveRecord: 67.3ms | Allocations: 3827)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 16:33:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` ORDER BY click_count desc LIMIT 1000[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.8ms | Allocations: 2396)
+
+

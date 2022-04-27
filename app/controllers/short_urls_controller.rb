@@ -5,7 +5,7 @@ class ShortUrlsController < ApplicationController
 
   #Get All
   def index
-    @short_url = ShortUrl.all
+    @short_url = ShortUrl.limit(1000).order('click_count desc')
     render(json: @short_url)
   end
   #Post
@@ -23,9 +23,15 @@ class ShortUrlsController < ApplicationController
   #Get id
   def show
     @short_url = ShortUrl.find_by(title: params[:id])
-    url = @short_url.full_url
-    redirect_to url
-    #render(json: @short_url)
+    if @short_url #Check if found
+      @short_url.increment!(:click_count) #Update count
+      url = @short_url.full_url
+      @short_url.touch(:updated_at) #Update time
+      redirect_to url
+    else #Show msg error
+      render json: "Error: No URL found"
+    end
+    
   end
 
   private
