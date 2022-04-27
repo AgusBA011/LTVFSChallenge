@@ -16,3 +16,1843 @@ Migrating to CreateShortUrls (20190923133432)
   [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('1889412250694455305')[0m
   [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
   [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('1889412250694455305', 0)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('1889412250694455305')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 172.18.0.1 at 2022-04-27 00:55:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ShortUrlsController#index as HTML
+Completed 406 Not Acceptable in 13ms (ActiveRecord: 0.0ms | Allocations: 1942)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2022-04-27 00:58:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 557)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 00:58:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+Completed 406 Not Acceptable in 9ms (ActiveRecord: 0.0ms | Allocations: 1822)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 01:04:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 552)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:04:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 549)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:05:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 549)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:09:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+No template found for ShortUrlsController#index, rendering head :no_content
+Completed 204 No Content in 9ms (ActiveRecord: 0.0ms | Allocations: 993)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:09:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+No template found for ShortUrlsController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 213)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:12:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+No template found for ShortUrlsController#index, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:12:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 550)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:14:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+No template found for ShortUrlsController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:14:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 549)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 01:14:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 549)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 01:14:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 549)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:16:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+No template found for ShortUrlsController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 01:16:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 549)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:16:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 549)
+
+
+  
+ActionController::MissingExactTemplate (ShortUrlsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.6) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.6) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.6) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:18:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/config/routes.rb:12: syntax error, unexpected end-of-input, expecting end):
+  
+config/routes.rb:12: syntax error, unexpected end-of-input, expecting end
+config/routes.rb:12: syntax error, unexpected end-of-input, expecting end
+config/routes.rb:12: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:18:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+NoMethodError (undefined method `respond_to' for ShortUrlsController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/short_urls_controller.rb:6:in `<class:ShortUrlsController>'
+app/controllers/short_urls_controller.rb:1:in `<main>'
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:19:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (65.1ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 343ms (Views: 28.0ms | ActiveRecord: 133.3ms | Allocations: 2168)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:20:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (1.9ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 1.9ms | Allocations: 986)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:20:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+  [1m[36mShortUrl Load (0.4ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 975)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 01:22:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 1416)
+
+
+  
+ActionView::MissingTemplate (Missing template short_urls/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3.6/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3.6/app/views"
+):
+  
+app/controllers/short_urls_controller.rb:16:in `show'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 01:28:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 692)
+
+
+  
+ActionView::MissingTemplate (Missing template short_urls/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3.6/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3.6/app/views"
+):
+  
+app/controllers/short_urls_controller.rb:16:in `show'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 01:29:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 692)
+
+
+  
+ActionView::MissingTemplate (Missing template short_urls/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3.6/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3.6/app/views"
+):
+  
+app/controllers/short_urls_controller.rb:16:in `show'
+Started GET "/?id=abc" for 172.18.0.1 at 2022-04-27 01:30:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.6ms | Allocations: 976)
+
+
+Started GET "/?/abc" for 172.18.0.1 at 2022-04-27 01:31:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+  Parameters: {"/abc"=>nil}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 975)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 01:31:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as */*
+  Parameters: {"id"=>"abc"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1476)
+
+
+  
+ActionView::MissingTemplate (Missing template short_urls/new, application/new with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3.6/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3.6/app/views"
+):
+  
+app/controllers/short_urls_controller.rb:16:in `show'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 01:33:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/abc"):
+  
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 01:40:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (5.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (402.9ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `show'
+Completed 404 Not Found in 1581ms (ActiveRecord: 1305.0ms | Allocations: 2804)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find ShortUrl with 'id'=abc):
+  
+app/controllers/short_urls_controller.rb:16:in `show'
+Started GET "/" for 172.18.0.1 at 2022-04-27 01:48:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.9ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.9ms | Allocations: 980)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 01:57:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/" for 172.18.0.1 at 2022-04-27 01:59:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (uninitialized constant ShortUrlController
+Did you mean?  ShortUrlsController):
+  
+actionpack (6.0.3.6) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.6) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.6) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/" for 172.18.0.1 at 2022-04-27 02:01:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+No template found for ShortUrlsController#create, rendering head :no_content
+Completed 204 No Content in 15ms (ActiveRecord: 35.3ms | Allocations: 1726)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 02:03:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+No template found for ShortUrlsController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 02:06:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+No template found for ShortUrlsController#create, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 02:06:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.5ms | Allocations: 1014)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 02:06:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+  [1m[36mShortUrl Load (90.9ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 98ms (Views: 5.1ms | ActiveRecord: 90.9ms | Allocations: 975)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 02:06:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 975)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 02:06:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as */*
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (1.9ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:28:in `show'
+Completed 404 Not Found in 8ms (ActiveRecord: 2.8ms | Allocations: 1249)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find ShortUrl with 'id'=abc):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 02:07:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (42.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:28:in `show'
+Completed 404 Not Found in 46ms (ActiveRecord: 42.8ms | Allocations: 1067)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find ShortUrl with 'id'=abc):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started GET "/" for 172.18.0.1 at 2022-04-27 02:07:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.9ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.9ms | Allocations: 973)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:13:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (69.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+No template found for ShortUrlsController#create, rendering head :no_content
+Completed 204 No Content in 100ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 03:13:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+  [1m[36mShortUrl Load (87.9ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 290ms (Views: 149.0ms | ActiveRecord: 87.9ms | Allocations: 975)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 03:13:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as */*
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (129.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:28:in `show'
+Completed 404 Not Found in 181ms (ActiveRecord: 129.8ms | Allocations: 1069)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find ShortUrl with 'id'=abc):
+  
+app/controllers/short_urls_controller.rb:28:in `show'
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:13:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+No template found for ShortUrlsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 03:24:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (18.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as */*
+  Rendering /usr/local/bundle/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 37.6ms | Allocations: 189)
+Completed 200 OK in 199ms (Views: 58.7ms | ActiveRecord: 0.0ms | Allocations: 1293)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 03:25:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as */*
+  Rendering /usr/local/bundle/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.7ms | Allocations: 206)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 880)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 03:25:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 7)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 450)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 03:26:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as */*
+  Rendering /usr/local/bundle/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 7)
+Completed 200 OK in 164ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1823)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 03:26:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 7)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 333)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:27:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+Completed 400 Bad Request in 2ms (ActiveRecord: 216.8ms | Allocations: 494)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/short_urls_controller.rb:31:in `post_params'
+app/controllers/short_urls_controller.rb:14:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:28:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 505)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/short_urls_controller.rb:31:in `post_params'
+app/controllers/short_urls_controller.rb:14:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:29:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 505)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/short_urls_controller.rb:31:in `post_params'
+app/controllers/short_urls_controller.rb:14:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:30:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 505)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/short_urls_controller.rb:31:in `post_params'
+app/controllers/short_urls_controller.rb:14:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:31:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 505)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/short_urls_controller.rb:31:in `post_params'
+app/controllers/short_urls_controller.rb:14:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:38:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 505)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/short_urls_controller.rb:31:in `post_params'
+app/controllers/short_urls_controller.rb:14:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:40:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 505)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/short_urls_controller.rb:31:in `post_params'
+app/controllers/short_urls_controller.rb:14:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:45:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 505)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/short_urls_controller.rb:31:in `post_params'
+app/controllers/short_urls_controller.rb:14:in `create'
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:46:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+NoMethodError (undefined method `Post' for #<ActionDispatch::Routing::Mapper:0x00007f240d042e68>):
+  
+config/routes.rb:13:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/" for 172.18.0.1 at 2022-04-27 03:46:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"https://google.com", "title"=>"ABC", "short_url"=>{"full_url"=>"https://google.com", "title"=>"ABC"}}
+  [1m[35m (25.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[36mShortUrl Create (504.5ms)[0m  [1m[32mINSERT INTO `short_urls` (`full_url`, `title`, `created_at`, `updated_at`) VALUES ('https://google.com', 'ABC', '2022-04-27 03:46:53.974092', '2022-04-27 03:46:53.974092')[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[35m (190.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+Completed 201 Created in 1844ms (Views: 125.9ms | ActiveRecord: 873.6ms | Allocations: 6921)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 03:47:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+  [1m[36mShortUrl Load (49.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 70ms (Views: 19.2ms | ActiveRecord: 49.6ms | Allocations: 1118)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 04:06:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (18.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"asd", "title"=>"try", "short_url"=>{"full_url"=>"asd", "title"=>"try"}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[36mShortUrl Create (126.2ms)[0m  [1m[32mINSERT INTO `short_urls` (`full_url`, `title`, `created_at`, `updated_at`) VALUES ('asd', 'try', '2022-04-27 04:06:48.229892', '2022-04-27 04:06:48.229892')[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[35m (45.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+Completed 201 Created in 186ms (Views: 1.3ms | ActiveRecord: 172.7ms | Allocations: 2733)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 04:08:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"asd", "title"=>"try", "short_url"=>{"full_url"=>"asd", "title"=>"try"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[36mShortUrl Create (14.2ms)[0m  [1m[32mINSERT INTO `short_urls` (`full_url`, `title`, `created_at`, `updated_at`) VALUES ('asd', 'try', '2022-04-27 04:08:21.213113', '2022-04-27 04:08:21.213113')[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[35m (15.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+Completed 201 Created in 36ms (Views: 0.7ms | ActiveRecord: 29.6ms | Allocations: 2734)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 04:08:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as */*
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.6ms | Allocations: 1353)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 04:16:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"asd", "title"=>"try", "short_url"=>{"full_url"=>"asd", "title"=>"try"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[36mShortUrl Create (18.0ms)[0m  [1m[32mINSERT INTO `short_urls` (`full_url`, `title`, `created_at`, `updated_at`) VALUES ('asd', 'try', '2022-04-27 04:16:49.205186', '2022-04-27 04:16:49.205186')[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[35m (100.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+Completed 201 Created in 130ms (Views: 1.2ms | ActiveRecord: 118.9ms | Allocations: 2729)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 04:17:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"asd", "title"=>"try", "short_url"=>{"full_url"=>"asd", "title"=>"try"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[36mShortUrl Create (1.1ms)[0m  [1m[32mINSERT INTO `short_urls` (`full_url`, `title`, `created_at`, `updated_at`) VALUES ('asd', 'try', '2022-04-27 04:17:38.761101', '2022-04-27 04:17:38.761101')[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[35m (27.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+Completed 201 Created in 43ms (Views: 1.7ms | ActiveRecord: 28.9ms | Allocations: 2734)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 04:18:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"asd", "title"=>"try", "short_url"=>{"full_url"=>"asd", "title"=>"try"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[36mShortUrl Create (1.5ms)[0m  [1m[32mINSERT INTO `short_urls` (`full_url`, `title`, `created_at`, `updated_at`) VALUES ('asd', 'try', '2022-04-27 04:18:15.467685', '2022-04-27 04:18:15.467685')[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[35m (48.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+Completed 201 Created in 97ms (Views: 2.1ms | ActiveRecord: 49.9ms | Allocations: 2730)
+
+
+Started POST "/" for 172.18.0.1 at 2022-04-27 04:18:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#create as */*
+  Parameters: {"full_url"=>"asd", "title"=>"try", "short_url"=>{"full_url"=>"asd", "title"=>"try"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[36mShortUrl Create (16.5ms)[0m  [1m[32mINSERT INTO `short_urls` (`full_url`, `title`, `created_at`, `updated_at`) VALUES ('asd', 'try', '2022-04-27 04:18:38.084481', '2022-04-27 04:18:38.084481')[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+  [1m[35m (24.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/short_urls_controller.rb:16:in `create'
+Completed 201 Created in 53ms (Views: 1.1ms | ActiveRecord: 41.6ms | Allocations: 2734)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 04:29:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#index as */*
+  [1m[36mShortUrl Load (62.4ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 72ms (Views: 8.6ms | ActiveRecord: 62.4ms | Allocations: 1857)
+
+
+Started GET "/abc" for 172.18.0.1 at 2022-04-27 04:36:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"abc"}
+  [1m[36mShortUrl Load (2.2ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 404 Not Found in 13ms (ActiveRecord: 2.2ms | Allocations: 1189)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find ShortUrl with 'id'=abc):
+  
+app/controllers/short_urls_controller.rb:25:in `show'
+Started GET "/try" for 172.18.0.1 at 2022-04-27 04:37:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"try"}
+  [1m[36mShortUrl Load (1.0ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 404 Not Found in 5ms (ActiveRecord: 1.0ms | Allocations: 1066)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find ShortUrl with 'id'=try):
+  
+app/controllers/short_urls_controller.rb:25:in `show'
+Started GET "/1" for 172.18.0.1 at 2022-04-27 04:38:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShortUrl Load (82.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 200 OK in 87ms (Views: 0.8ms | ActiveRecord: 82.6ms | Allocations: 886)
+
+
+Started GET "/1" for 172.18.0.1 at 2022-04-27 04:38:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 887)
+
+
+Started GET "/host" for 172.18.0.1 at 2022-04-27 04:38:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"host"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 404 Not Found in 6ms (ActiveRecord: 0.6ms | Allocations: 1067)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find ShortUrl with 'id'=host):
+  
+app/controllers/short_urls_controller.rb:25:in `show'
+Started GET "/1" for 172.18.0.1 at 2022-04-27 04:38:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShortUrl Load (0.4ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 886)
+
+
+Started GET "/show" for 172.18.0.1 at 2022-04-27 04:38:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 404 Not Found in 8ms (ActiveRecord: 0.6ms | Allocations: 1067)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find ShortUrl with 'id'=show):
+  
+app/controllers/short_urls_controller.rb:25:in `show'
+Started GET "/" for 172.18.0.1 at 2022-04-27 04:39:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.6ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.6ms | Allocations: 1855)
+
+
+Started GET "/" for 172.18.0.1 at 2022-04-27 04:39:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#index as HTML
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls`[0m
+  ↳ app/controllers/short_urls_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.5ms | Allocations: 1856)
+
+
+Started GET "/1" for 172.18.0.1 at 2022-04-27 04:39:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShortUrl Load (0.8ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 887)
+
+
+Started PUT "/" for 172.18.0.1 at 2022-04-27 04:39:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [PUT] "/"):
+  
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/1" for 172.18.0.1 at 2022-04-27 04:40:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShortUrl Load (0.7ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 886)
+
+
+Started GET "/1" for 172.18.0.1 at 2022-04-27 04:40:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShortUrl Load (0.5ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 887)
+
+
+Started GET "/1" for 172.18.0.1 at 2022-04-27 04:40:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShortUrl Load (1.9ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 1.9ms | Allocations: 887)
+
+
+Started GET "/1" for 172.18.0.1 at 2022-04-27 04:40:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ShortUrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShortUrl Load (2.0ms)[0m  [1m[34mSELECT `short_urls`.* FROM `short_urls` WHERE `short_urls`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/short_urls_controller.rb:25:in `show'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 2.0ms | Allocations: 887)
+
+
