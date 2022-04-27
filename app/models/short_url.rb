@@ -7,11 +7,13 @@ class ShortUrl < ApplicationRecord
             format: { with: URI.regexp(%w(http https)), message: :bad_url_format }
   
   validate :validate_full_url 
+
   def short_code
     
   end
 
   def update_title!
+
   end
 
   private
