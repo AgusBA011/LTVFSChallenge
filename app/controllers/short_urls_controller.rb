@@ -11,21 +11,13 @@ class ShortUrlsController < ApplicationController
 
   #Post
   def create
-    short_url_params #Validate POST PARAMS
-
-    #Validate unique URL
-    if ShortUrl.find_by(full_url: params[:full_url])
-      render json: "Error: URL already in database"
-    end
-
     #Generate short code
-    #short_code = ShortUrl.short_code(params[:full_url])
-    #UpdateTitleJob.perform_later(@short_url)
-    #Agregar título
-    
-    @short_url = ShortUrl.new(short_url_params)
-
+    short_code = ShortUrl.short_code
+    #Insert new ShortURL
+    @short_url = ShortUrl.new(short_url_params(short_code))
     if @short_url.save
+      puts @short_url.id
+      UpdateTitleJob.perform_later(@short_url.id)    #Agregar título con JOB
       render json: @short_url, status: :created, location: @short_url
     else
       render json: @short_url.errors, status: :unprocessable_entity
@@ -34,7 +26,7 @@ class ShortUrlsController < ApplicationController
   end
   #Get id
   def show
-    @short_url = ShortUrl.find_by(title: params[:id])
+    @short_url = ShortUrl.find_by(short_code: params[:id])
     if @short_url #Check if found
       @short_url.increment!(:click_count) #Update count
       url = @short_url.full_url
@@ -46,8 +38,8 @@ class ShortUrlsController < ApplicationController
   end
 
   private
-  def short_url_params
-    params.require(:short_url).permit(:full_url)
+  def short_url_params(code)
+    params.require(:short_url).permit(:full_url).merge(short_code: code)
   end
 
 end

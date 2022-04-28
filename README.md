@@ -21,7 +21,7 @@
 
 # Adding a URL
 
-    curl -X POST -d "full_url=https://google.com" http://localhost:3000/short_urls.json
+    curl -X POST -d "full_url=https://google.com" http://localhost:3000/
 
 # Getting the top 100
 

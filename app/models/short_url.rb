@@ -8,8 +8,18 @@ class ShortUrl < ApplicationRecord
   
   validate :validate_full_url 
 
-  def short_code
-    
+  def self.short_code
+
+    while true
+      id = ""
+      #3 character id
+      (0..2).each do |i|
+        id += CHARACTERS.sample
+      end
+      if ! ShortUrl.exists?([:short_code => id])
+        return id
+      end
+    end
   end
 
   def update_title!
