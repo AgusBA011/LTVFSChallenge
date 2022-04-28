@@ -16,8 +16,8 @@ class ShortUrlsController < ApplicationController
     #Insert new ShortURL
     @short_url = ShortUrl.new(short_url_params(short_code))
     if @short_url.save
-      puts @short_url.id
-      UpdateTitleJob.perform_later(@short_url.id)    #Agregar título con JOB
+      #Creates JOB
+      UpdateTitleJob.perform_later(@short_url.id)    
       render json: @short_url, status: :created, location: @short_url
     else
       render json: @short_url.errors, status: :unprocessable_entity
@@ -37,6 +37,7 @@ class ShortUrlsController < ApplicationController
     end 
   end
 
+  #Checks POST params
   private
   def short_url_params(code)
     params.require(:short_url).permit(:full_url).merge(short_code: code)
